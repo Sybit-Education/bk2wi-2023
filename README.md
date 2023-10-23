@@ -29,6 +29,17 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 npm install
 ```
 
+### Environment Setup
+
+To get connection to Airtable it is required to have `.env.local` file within root directory:
+
+```
+VITE_APP_AIRTABLE_TOKEN=[xxx]
+VITE_APP_AIRTABLE_BASE=[xxx]
+```
+
+**🛑 Cauton:** Do not comit these values to GitHub!! Store them at save location.
+
 ### Compile and Hot-Reload for Development
 
 ```sh
