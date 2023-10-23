@@ -1,5 +1,7 @@
 # bk2wi-2023 - Localee
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9223a4aa-2e15-40a5-8d4e-c69a1b7ea6a1/deploy-status)](https://app.netlify.com/sites/localee/deploys)
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
