@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-import './assets/main.scss'
->>>>>>> f30e627f7a64d74acf267c40967c4e5a9f22b7f4
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
