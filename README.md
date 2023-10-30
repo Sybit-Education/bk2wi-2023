@@ -1,4 +1,7 @@
-# bk2wi-2023
+
+# bk2wi-2023 - Localee
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9223a4aa-2e15-40a5-8d4e-c69a1b7ea6a1/deploy-status)](https://app.netlify.com/sites/localee/deploys)
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -26,6 +29,17 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 ```sh
 npm install
 ```
+
+### Environment Setup
+
+To get connection to Airtable it is required to have `.env.local` file within root directory:
+
+```
+VITE_APP_AIRTABLE_TOKEN=[xxx]
+VITE_APP_AIRTABLE_BASE=[xxx]
+```
+
+**🛑 Cauton:** Do not comit these values to GitHub!! Store them at save location.
 
 ### Compile and Hot-Reload for Development
 
