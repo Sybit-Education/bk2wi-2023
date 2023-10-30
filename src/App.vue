@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import LocaleeHeader from "./components/LocaleeHeader"
+import LocaleeHeader from "./components/LocaleeHeader";
 
 </script>
 
 <template>
-  <LocaleeHeader
-  <RouterView />
+  <LocaleeHeader />
+  <RouterView/>
 </template>
 
 <style>
