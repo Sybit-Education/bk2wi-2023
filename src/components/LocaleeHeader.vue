@@ -1,13 +1,18 @@
-<script setup lang="ts">
-
-</script>
-
+<script setup lang="ts"></script>
 
 
 <template>
-    <div><h1>Test</h1></div>
+    <div id="header">
+        <h1>Localee</h1>
+    </div>
 </template>
 
-<script setup></script>
 
-<style></style>
+
+<style scoped>
+    h1{
+        text-align: center;
+    }
+
+
+</style>
