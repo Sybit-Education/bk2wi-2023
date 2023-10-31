@@ -8,7 +8,15 @@ import { RouterView } from 'vue-router'
   </header>
   <main>
     <b-container fluid="false">
-      <router-view />
+      <b-row>
+        <b-col cols="4">
+          Filter
+        </b-col>
+        <b-col>
+          <router-view />
+        </b-col>
+        
+      </b-row>
     </b-container>
   </main>
   <footer>
@@ -17,5 +25,7 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-
+main {
+  min-height: calc(100vh - 20px);
+}
 </style>
