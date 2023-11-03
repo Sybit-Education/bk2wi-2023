@@ -21,8 +21,11 @@ export const useEventItemStore = defineStore('event', {
     async load() {
       const loadingStore = useLoadingStore();
       loadingStore.updateLoading(true);
-      this.eventItemList = eventService.getList()
-      loadingStore.updateLoading(false);
+      eventService.getList().then((result) => {
+        this.eventItemList = result as Array<EventItem>;
+        loadingStore.updateLoading(false);
+      })
+      
     },
   },
 })

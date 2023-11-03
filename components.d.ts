@@ -8,6 +8,9 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     BButton: typeof import('bootstrap-vue-next')['BButton']
+    BCard: typeof import('bootstrap-vue-next')['BCard']
+    BCardGroup: typeof import('bootstrap-vue-next')['BCardGroup']
+    BCardTitle: typeof import('bootstrap-vue-next')['BCardTitle']
     BCol: typeof import('bootstrap-vue-next')['BCol']
     BCollapse: typeof import('bootstrap-vue-next')['BCollapse']
     BContainer: typeof import('bootstrap-vue-next')['BContainer']
@@ -22,6 +25,8 @@ declare module 'vue' {
     BNavItemDropdown: typeof import('bootstrap-vue-next')['BNavItemDropdown']
     BRow: typeof import('bootstrap-vue-next')['BRow']
     ContentItem: typeof import('./src/components/ContentItem.vue')['default']
+    EventItem: typeof import('./src/components/events/EventItem.vue')['default']
+    EventList: typeof import('./src/components/events/EventList.vue')['default']
     FilterSidebar: typeof import('./src/components/FilterSidebar.vue')['default']
     FooterBar: typeof import('./src/components/FooterBar.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
