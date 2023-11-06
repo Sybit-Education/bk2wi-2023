@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
-import LocaleeHeader from "./components/LocaleeHeader.vue"
-import FilterSidebar from './components/FilterSidebar.vue';
-import HomeContent from './components/HomeContent.vue';
+  import { RouterView } from 'vue-router'
+  import LocaleeHeader from "./components/LocaleeHeader.vue"
+  import FilterSidebar from './components/FilterSidebar.vue';
+  import HomeContent from './components/HomeContent.vue';
+
 </script>
+
 
 <template>
   
