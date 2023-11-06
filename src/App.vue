@@ -16,10 +16,13 @@ export default defineComponent({
 
 
 <template>
-  
-  <LocaleeHeader/>
-  
-  <RouterView/>
-  
+  <header>
+    <LocaleeHeader/>
+  </header>
+  <main>
+    <BContainer>
+      <RouterView/>
+    </BContainer>
+  </main>
 </template>
 
