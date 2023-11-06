@@ -7,10 +7,15 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    BButton: typeof import('bootstrap-vue-next')['BButton']
     BCard: typeof import('bootstrap-vue-next')['BCard']
     BCardGroup: typeof import('bootstrap-vue-next')['BCardGroup']
     BCardText: typeof import('bootstrap-vue-next')['BCardText']
     BCardTitle: typeof import('bootstrap-vue-next')['BCardTitle']
+    BCol: typeof import('bootstrap-vue-next')['BCol']
+    BContainer: typeof import('bootstrap-vue-next')['BContainer']
+    BFormInput: typeof import('bootstrap-vue-next')['BFormInput']
+    BRow: typeof import('bootstrap-vue-next')['BRow']
     ContentItem: typeof import('./src/components/ContentItem.vue')['default']
     EventItem: typeof import('./src/components/events/EventItem.vue')['default']
     EventList: typeof import('./src/components/events/EventList.vue')['default']
