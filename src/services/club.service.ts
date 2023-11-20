@@ -20,9 +20,16 @@ const clubService = {
                   resultList.push({
                   id: partialRecord.id,
                   name: partialRecord.get('Name') as string,
+                  // bild: partialRecord.get('Bild') as bild,
                   adresse: partialRecord.get('Adresse') as string,
                   ort: partialRecord.get('Ort') as string,
-                  plz: partialRecord.get('PLZ') as string
+                  plz: partialRecord.get('PLZ') as string,
+                  email: partialRecord.get('E-Mail') as string,
+                  telefon: partialRecord.get('Telefon') as string,
+                  oeffnungstage: partialRecord('Öffnungstage') as string,
+                  oeffnungszeite: partialRecord('Öffnungszieten') as string,
+                  webseite: partialRecord('Webseite') as string,
+
                                                     
                   })
               })
