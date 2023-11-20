@@ -1,5 +1,4 @@
 <template>
-  <main>
     <div id="contentbox">
       
       <!--
@@ -12,14 +11,14 @@
 
       <ContentItem></ContentItem>
 
+      <EventList />
+
     </div>
-  </main>
 </template>
 
 <script setup lang="ts">
-import ContentItem from './ContentItem.vue'
-
-import SearchBar from './SearchBar.vue'
+import ContentItem from './ContentItem.vue';
+import EventList from './events/EventList.vue'
 
 const props = defineProps(['foundEntry', 'entries'])
 

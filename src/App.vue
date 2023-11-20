@@ -1,30 +1,28 @@
-<script setup lang="ts">
-  import { RouterView } from 'vue-router'
-  import LocaleeHeader from "./components/LocaleeHeader.vue"
-  import FilterSidebar from './components/FilterSidebar.vue';
-  import HomeContent from './components/HomeContent.vue';
+<script lang="ts">
+import { RouterView } from 'vue-router'
+import LocaleeHeader from "./components/LocaleeHeader.vue"
+import { useEventItemStore } from './stores/eventItem';
 
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+
+  created () {
+    const storeEvents = useEventItemStore()
+    storeEvents.load()
+  }
+})
 </script>
 
 
 <template>
-  
-  <LocaleeHeader/>
-
-  
-  <RouterView/>
-  
+  <header>
+    <LocaleeHeader/>
+  </header>
+  <main>
+    <BContainer>
+      <RouterView/>
+    </BContainer>
+  </main>
 </template>
 
-<style>
-  
-  *{
-  font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .container{
-    
-  }
-
-
-</style>
