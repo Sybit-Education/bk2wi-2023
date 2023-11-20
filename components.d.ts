@@ -7,6 +7,8 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    BarsItem: typeof import('./src/components/bars/barsItem.vue')['default']
+    BarsList: typeof import('./src/components/bars/barsList.vue')['default']
     BButton: typeof import('bootstrap-vue-next')['BButton']
     BCard: typeof import('bootstrap-vue-next')['BCard']
     BCardGroup: typeof import('bootstrap-vue-next')['BCardGroup']
@@ -23,6 +25,9 @@ declare module 'vue' {
     BRow: typeof import('bootstrap-vue-next')['BRow']
     BSkeleton: typeof import('bootstrap-vue-next')['BSkeleton']
     BSkeletonWrapper: typeof import('bootstrap-vue-next')['BSkeletonWrapper']
+    Club1: typeof import('./src/components/club/Club1.vue')['default']
+    ClubItem: typeof import('./src/components/club/ClubItem.vue')['default']
+    ClubList: typeof import('./src/components/club/ClubList.vue')['default']
     ContentItem: typeof import('./src/components/ContentItem.vue')['default']
     EventItem: typeof import('./src/components/events/EventItem.vue')['default']
     EventList: typeof import('./src/components/events/EventList.vue')['default']
