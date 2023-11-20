@@ -7,10 +7,11 @@
       </div>
       -->
 
-      <ContentItem title="test"></ContentItem>
+      <h2>Clubs</h2>
+      <ClubList />
 
-      <ContentItem></ContentItem>
-
+      
+      <h2>Events</h2>
       <EventList />
 
     </div>
@@ -19,6 +20,8 @@
 <script setup lang="ts">
 import ContentItem from './ContentItem.vue';
 import EventList from './events/EventList.vue'
+import ClubList from './club/ClubList.vue'
+
 
 const props = defineProps(['foundEntry', 'entries'])
 

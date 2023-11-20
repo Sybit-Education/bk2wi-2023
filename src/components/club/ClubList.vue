@@ -16,7 +16,7 @@
 </template>
 <script lang="ts">
 import type ClubItem from '../../models/ClubItem'
-import { useClubItemStore } from '../../stores/ClubItem';
+import { useClubItemStore } from '../../stores/clubItem';
 import { useLoadingStore } from '../../stores/loading';
 import { mapState } from 'pinia';
 import { defineComponent } from 'vue';
