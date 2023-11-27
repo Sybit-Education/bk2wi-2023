@@ -1,5 +1,5 @@
 <template>
-    <div id="contentbox">
+    <div>
       
       <!--
       <div class="item entry" v-for="entry in filteredList()" :key="entry">
@@ -38,10 +38,5 @@ function filteredList() {
 </script>
 
 <style scoped>
-#contentbox {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 
-  border: 1px solid;
-}
 </style>

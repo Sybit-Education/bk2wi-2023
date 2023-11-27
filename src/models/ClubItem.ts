@@ -1,7 +1,8 @@
 export default interface ClubItem {
     id: string;
     name: string;
-    // bild: bild;
+    notes: string;
+    bild: any;
     adresse: string;
     plz: string;
     ort: string;
