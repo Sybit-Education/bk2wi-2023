@@ -2,9 +2,18 @@
 
 
 <template>
-    <div id="header">
-        <h1>Localee</h1>
-    </div>
+    <BNavbar toggleable="sm" variant="primary" v-b-color-mode="'dark'">
+        <BNavbarBrand tag="h1" class="mb-0" to="/">Localee</BNavbarBrand>
+
+        <BNavbarToggle target="nav-text-collapse" />
+
+        <BCollapse id="nav-text-collapse" is-nav>
+            <BNavbarNav>
+                <BNavItem to="/club">Clubs</BNavItem>
+                <BNavItem to="/about">Über uns</BNavItem>
+            </BNavbarNav>
+        </BCollapse>
+    </BNavbar>
 </template>
 
 

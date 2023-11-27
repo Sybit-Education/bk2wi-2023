@@ -1,6 +1,4 @@
 <script lang="ts">
-import { RouterView } from 'vue-router'
-import LocaleeHeader from "./components/LocaleeHeader.vue"
 import { useEventItemStore } from './stores/eventItem';
 import { useClubItemStore } from './stores/clubItem';
 

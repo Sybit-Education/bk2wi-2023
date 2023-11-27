@@ -4,7 +4,7 @@
     <slot name="text"></slot>
 
     <BCard
-      title= "Test"
+      title= "test"
       img-src="https://picsum.photos/600/300/?image=25"
       img-alt="Image"
       img-top
@@ -13,7 +13,7 @@
     >
       <BCardText>
         Some quick example text to build on the card title and make up the bulk of the card's
-        content.
+        content. {{ title }}
       </BCardText>
 
       <BButton href="#" variant="primary">Go somewhere</BButton>

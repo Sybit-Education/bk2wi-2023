@@ -7,22 +7,37 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    BarsItem: typeof import('./src/components/bars/barsItem.vue')['default']
+    BarsList: typeof import('./src/components/bars/barsList.vue')['default']
+    BBreadcrumb: typeof import('bootstrap-vue-next')['BBreadcrumb']
+    BBreadcrumbItem: typeof import('bootstrap-vue-next')['BBreadcrumbItem']
     BButton: typeof import('bootstrap-vue-next')['BButton']
     BCard: typeof import('bootstrap-vue-next')['BCard']
     BCardGroup: typeof import('bootstrap-vue-next')['BCardGroup']
     BCardText: typeof import('bootstrap-vue-next')['BCardText']
     BCardTitle: typeof import('bootstrap-vue-next')['BCardTitle']
     BCol: typeof import('bootstrap-vue-next')['BCol']
+    BCollapse: typeof import('bootstrap-vue-next')['BCollapse']
     BContainer: typeof import('bootstrap-vue-next')['BContainer']
     BFormGroup: typeof import('bootstrap-vue-next')['BFormGroup']
     BFormInput: typeof import('bootstrap-vue-next')['BFormInput']
+    BImg: typeof import('bootstrap-vue-next')['BImg']
     BInputGroup: typeof import('bootstrap-vue-next')['BInputGroup']
+    BNavbar: typeof import('bootstrap-vue-next')['BNavbar']
+    BNavbarBrand: typeof import('bootstrap-vue-next')['BNavbarBrand']
+    BNavbarNav: typeof import('bootstrap-vue-next')['BNavbarNav']
+    BNavbarToggle: typeof import('bootstrap-vue-next')['BNavbarToggle']
+    BNavItem: typeof import('bootstrap-vue-next')['BNavItem']
+    BNavText: typeof import('bootstrap-vue-next')['BNavText']
     BPlaceholder: typeof import('bootstrap-vue-next')['BPlaceholder']
     BPlaceholderCard: typeof import('bootstrap-vue-next')['BPlaceholderCard']
     BPlaceholderWrapper: typeof import('bootstrap-vue-next')['BPlaceholderWrapper']
     BRow: typeof import('bootstrap-vue-next')['BRow']
     BSkeleton: typeof import('bootstrap-vue-next')['BSkeleton']
     BSkeletonWrapper: typeof import('bootstrap-vue-next')['BSkeletonWrapper']
+    Club1: typeof import('./src/components/club/Club1.vue')['default']
+    ClubItem: typeof import('./src/components/club/ClubItem.vue')['default']
+    ClubList: typeof import('./src/components/club/ClubList.vue')['default']
     ContentItem: typeof import('./src/components/ContentItem.vue')['default']
     EventItem: typeof import('./src/components/events/EventItem.vue')['default']
     EventList: typeof import('./src/components/events/EventList.vue')['default']
@@ -42,5 +57,8 @@ declare module 'vue' {
     Template: typeof import('./src/components/template.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
+  }
+  export interface ComponentCustomProperties {
+    vBColorMode: typeof import('bootstrap-vue-next')['vBColorMode']
   }
 }
