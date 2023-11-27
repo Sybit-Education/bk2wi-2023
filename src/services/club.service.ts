@@ -22,7 +22,6 @@ const clubService = {
                     name: partialRecord.get('Name') as string,
                     bild: partialRecord.get('Bild') as string,
                     notes: partialRecord.get('Notes') as string,
-                    // bild: partialRecord.get('Bild') as bild,
                     adresse: partialRecord.get('Adresse') as string,
                     ort: partialRecord.get('Ort') as string,
                     plz: partialRecord.get('PLZ') as string,
