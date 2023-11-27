@@ -35,10 +35,5 @@ function filteredList() {
 </script>
 
 <style scoped>
-#contentbox {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 
-  border: 1px solid;
-}
 </style>

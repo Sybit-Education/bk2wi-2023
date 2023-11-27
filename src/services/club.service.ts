@@ -26,9 +26,9 @@ const clubService = {
                   plz: partialRecord.get('PLZ') as string,
                   email: partialRecord.get('E-Mail') as string,
                   telefon: partialRecord.get('Telefon') as string,
-                  oeffnungstage: partialRecord('Öffnungstage') as string,
-                  oeffnungszeite: partialRecord('Öffnungszieten') as string,
-                  webseite: partialRecord('Webseite') as string,
+                  oeffnungstage: partialRecord.get('Öffnungstage') as string,
+                  oeffnungszeite: partialRecord.get('Öffnungszieten') as string,
+                  webseite: partialRecord.get('Webseite') as string,
 
                                                     
                   })

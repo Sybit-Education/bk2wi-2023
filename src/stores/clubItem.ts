@@ -15,7 +15,7 @@ export const useClubItemStore = defineStore('club', {
   getters: {
     getAll: (state) => state.clubItemList,
     getById: (state) => (id: string) =>
-      state.clubItemList.find((club: clubItem) => club.id === id),
+      state.clubItemList.find((club: ClubItem) => club.id === id),
   },
   actions: {
     async load() {
