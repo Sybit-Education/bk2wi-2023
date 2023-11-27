@@ -1,7 +1,8 @@
-export default interface ClubItem {
+
+export default interface UnterkunftItem{
     id: string;
     name: string;
-    // bild: bild;
+    // bild : bild;
     //getränkekarte: bild;
     adresse: string;
     plz: string;
@@ -9,6 +10,6 @@ export default interface ClubItem {
     email: string;
     telefon: string;
     oeffnungstage: string;
-    oeffnungszeite: string;
+    oeffnungszeiten: string;
     webseite: string;
 }

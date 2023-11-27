@@ -1,14 +1,14 @@
-export default interface ClubItem {
+export default interface UnterkunftItem{
     id: string;
     name: string;
-    // bild: bild;
-    //getränkekarte: bild;
+    // bild : bild;
+    //speisekarte: bild;
     adresse: string;
     plz: string;
     ort: string;
     email: string;
     telefon: string;
     oeffnungstage: string;
-    oeffnungszeite: string;
+    oeffnungszeiten: string;
     webseite: string;
 }
