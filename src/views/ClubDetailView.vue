@@ -1,10 +1,24 @@
 <template>
-    <div v-if="club">
-        <h1>{{ club.name }}</h1>
-        <b-img :src="image" />
-        <p>{{ club.notes }}</p>
+  <div  v-if="club">
+    <BBreadcrumb>
+      <BBreadcrumbItem to="/home"> Home </BBreadcrumbItem>
+      <BBreadcrumbItem to="/club"> Clubs </BBreadcrumbItem>
+      <BBreadcrumbItem :to="'/club/' + club.id" active> {{ club.name }} </BBreadcrumbItem>
+    </BBreadcrumb>
+
+    <div>
+      <h1>{{ club.name }}</h1>
+      <b-img :src="image" fluid-grow />
+      <p>{{ club.notes }}</p>
+
+      <h3>Adresse</h3>
+      <address>
+        <span id="street">{{ club.adresse }}</span><br />
+        <span id="zipCode">{{ club.plz }}</span> <span id="city">{{ club.ort }}</span>
+      </address>
 
     </div>
+  </div>
 </template>
 <script lang="ts">
 import { mapState } from "pinia";
