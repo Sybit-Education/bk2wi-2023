@@ -3,8 +3,7 @@ import HomeContent from '@/components/HomeContent.vue'
 import FilterSidebar from '@/components/FilterSidebar.vue'
 import SearchBar from '@/components/SearchBar.vue'
 import type { BRow } from 'bootstrap-vue-next'
-import { defineComponent, ref } from 'vue'
-import Vue from 'vue'
+import { ref } from 'vue'
 
 const searchQuery = ref('')
 const entries = ref([ "test", '1234', '567'])
