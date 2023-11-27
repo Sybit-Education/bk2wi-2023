@@ -18,6 +18,7 @@ declare module 'vue' {
     BContainer: typeof import('bootstrap-vue-next')['BContainer']
     BFormGroup: typeof import('bootstrap-vue-next')['BFormGroup']
     BFormInput: typeof import('bootstrap-vue-next')['BFormInput']
+    BImg: typeof import('bootstrap-vue-next')['BImg']
     BInputGroup: typeof import('bootstrap-vue-next')['BInputGroup']
     BPlaceholder: typeof import('bootstrap-vue-next')['BPlaceholder']
     BPlaceholderCard: typeof import('bootstrap-vue-next')['BPlaceholderCard']

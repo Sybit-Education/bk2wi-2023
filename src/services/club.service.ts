@@ -18,19 +18,18 @@ const clubService = {
               // This function (`page`) will get called for each page of records.
               partialRecords.forEach((partialRecord) => {
                   resultList.push({
-                  id: partialRecord.id,
-                  name: partialRecord.get('Name') as string,
-                  // bild: partialRecord.get('Bild') as bild,
-                  adresse: partialRecord.get('Adresse') as string,
-                  ort: partialRecord.get('Ort') as string,
-                  plz: partialRecord.get('PLZ') as string,
-                  email: partialRecord.get('E-Mail') as string,
-                  telefon: partialRecord.get('Telefon') as string,
-                  oeffnungstage: partialRecord('Öffnungstage') as string,
-                  oeffnungszeite: partialRecord('Öffnungszieten') as string,
-                  webseite: partialRecord('Webseite') as string,
-
-                                                    
+                    id: partialRecord.id,
+                    name: partialRecord.get('Name') as string,
+                    bild: partialRecord.get('Bild') as string,
+                    notes: partialRecord.get('Notes') as string,
+                    adresse: partialRecord.get('Adresse') as string,
+                    ort: partialRecord.get('Ort') as string,
+                    plz: partialRecord.get('PLZ') as string,
+                    email: partialRecord.get('E-Mail') as string,
+                    telefon: partialRecord.get('Telefon') as string,
+                    oeffnungstage: partialRecord.get('Öffnungstage') as string,
+                    oeffnungszeite: partialRecord.get('Öffnungszieten') as string,
+                    webseite: partialRecord.get('Webseite') as string,                                                   
                   })
               })
               // To fetch the next page of records, call `fetchNextPage`.
