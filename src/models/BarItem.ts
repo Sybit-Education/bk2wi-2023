@@ -1,5 +1,5 @@
 
-export default interface UnterkunftItem{
+export default interface BarItem{
     id: string;
     name: string;
     // bild : bild;

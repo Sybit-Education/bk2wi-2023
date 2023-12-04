@@ -1,4 +1,4 @@
-export default interface UnterkunftItem{
+export default interface RestaurantItem{
     id: string;
     name: string;
     // bild : bild;
