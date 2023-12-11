@@ -7,6 +7,8 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    BarItem: typeof import('./src/components/bar/BarItem.vue')['default']
+    BarList: typeof import('./src/components/bar/BarList.vue')['default']
     BarsItem: typeof import('./src/components/bars/barsItem.vue')['default']
     BarsList: typeof import('./src/components/bars/barsList.vue')['default']
     BBreadcrumb: typeof import('bootstrap-vue-next')['BBreadcrumb']
@@ -29,13 +31,13 @@ declare module 'vue' {
     BNavbarToggle: typeof import('bootstrap-vue-next')['BNavbarToggle']
     BNavItem: typeof import('bootstrap-vue-next')['BNavItem']
     BNavText: typeof import('bootstrap-vue-next')['BNavText']
+    BOffcanvas: typeof import('bootstrap-vue-next')['BOffcanvas']
     BPlaceholder: typeof import('bootstrap-vue-next')['BPlaceholder']
     BPlaceholderCard: typeof import('bootstrap-vue-next')['BPlaceholderCard']
     BPlaceholderWrapper: typeof import('bootstrap-vue-next')['BPlaceholderWrapper']
     BRow: typeof import('bootstrap-vue-next')['BRow']
     BSkeleton: typeof import('bootstrap-vue-next')['BSkeleton']
     BSkeletonWrapper: typeof import('bootstrap-vue-next')['BSkeletonWrapper']
-    Club1: typeof import('./src/components/club/Club1.vue')['default']
     ClubItem: typeof import('./src/components/club/ClubItem.vue')['default']
     ClubList: typeof import('./src/components/club/ClubList.vue')['default']
     ContentItem: typeof import('./src/components/ContentItem.vue')['default']
@@ -56,6 +58,11 @@ declare module 'vue' {
     SearchBar: typeof import('./src/components/SearchBar.vue')['default']
     Template: typeof import('./src/components/template.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
+    Verleih1: typeof import('./src/components/verleih/Verleih1.vue')['default']
+    VerleihItem: typeof import('./src/components/verleih/VerleihItem.vue')['default']
+    Verleihlist: typeof import('./src/components/verleih/Verleihlist.vue')['default']
+    VerleihList: typeof import('./src/components/verleih/VerleihList.vue')['default']
+    Verleihlistcontent: typeof import('./src/components/events/Verleihlistcontent.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
   export interface ComponentCustomProperties {

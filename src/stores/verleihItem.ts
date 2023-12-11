@@ -1,23 +1,23 @@
 import { defineStore } from 'pinia'
-import type ClubItem from '@/models/ClubItem'
-import clubService from '@/services/club.service'
+import type VerleihItem from '@/models/VerleihItem'
+import verleihService from '@/services/verleih.service'
 import { useLoadingStore } from './loading'
 
 interface State {
-  clubItemList: ClubItem[]
+  verleihItemList: VerleihItem[]
 }
-export const useClubItemStore = defineStore('club', {
+export const useVerleihItemStore = defineStore('verleih', {
   state: (): State => {
     return {
-      clubItemList: [],
+      verleihItemList: [],
     };
   },
   getters: {
-    getAll: (state) => state.clubItemList,
+    getAll: (state) => state.verleihItemList,
     getById: (state) => (id: string) =>
-      state.clubItemList.find((club: ClubItem) => club.id === id),
+      state.verleihItemList.find((verleih: VerleihItem) => verleih.id === id),
     imageById: (state) => (id: string) => {
-        const item = state.clubItemList.find((club: ClubItem) => club.id === id)
+        const item = state.verleihItemList.find((verleih: VerleihItem) => verleih.id === id)
         if (item && item.bild) {
             return item.bild[0].thumbnails.large.url
         } else {
@@ -29,8 +29,8 @@ export const useClubItemStore = defineStore('club', {
     async load() {
       const loadingStore = useLoadingStore();
       loadingStore.updateLoading(true);
-      clubService.getList().then((result) => {
-        this.clubItemList = result as Array<ClubItem>;
+      verleihService.getList().then((result) => {
+        this.verleihItemList = result as Array<VerleihItem>;
         loadingStore.updateLoading(false);
       })
       

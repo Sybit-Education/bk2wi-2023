@@ -6,17 +6,17 @@
           <BPlaceholderCard style="min-width: 10rem;" no-footer />
           <BPlaceholderCard style="min-width: 10rem;" no-footer />
         </template>    
-        <bars-item
-                v-for="bars in clubList"
-                :key="bars.id"
-                :club="bars"
+        <bar-item
+                v-for="bar in barList"
+                :key="bar.id"
+                :bar="bar"
               />
       </BPlaceholderWrapper>
     </b-card-group>
 </template>
 <script lang="ts">
-import type ClubItem from '@/models/ClubItem'
-import { useClubItemStore } from '@/stores/clubItem';
+import type BarItem from '@/models/BarItem'
+import { useBarItemStore } from '@/stores/barItem';
 import { useLoadingStore } from '@/stores/loading';
 import { mapState } from 'pinia';
 import { defineComponent } from 'vue';
@@ -24,8 +24,8 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   name: "ProjectListView",
   computed: {
-    ...mapState(useClubItemStore, {
-      clubList: (store) => store.clubItemList as Array<ClubItem>,
+    ...mapState(useBarItemStore, {
+      barList: (store) => store.barItemList as Array<BarItem>,
     }),
     ...mapState(useLoadingStore, {
       showLoadingSpinner: (store) => store.showLoadingSpinner

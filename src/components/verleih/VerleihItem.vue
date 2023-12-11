@@ -1,7 +1,7 @@
 <template>
     <router-link :to="detailUrl">
         <b-card :img-src="image" img-top>
-            <b-card-title>{{ club.name }}</b-card-title>
+            <b-card-title>{{ verleih.name }}</b-card-title>
             <b-card-text>Lore ipsum </b-card-text>
         </b-card>
     </router-link>
@@ -9,25 +9,25 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { mapState } from "pinia";
-import { useClubItemStore } from '@/stores/clubItem'
+import { useVerleihItemStore } from '@/stores/verleihItem'
 
 export default defineComponent({
-    name: 'ClubItem',
+    name: 'VerleihItem',
     props: {
-        club: {
+        verleih: {
             type: Object,
             required: true,
         }
     },
     computed: {
-        ...mapState(useClubItemStore, {
+        ...mapState(useVerleihItemStore, {
             imageById: (state) => state.imageById
         }),    
         image() : string {
-            return this.imageById(this.club.id) as string;
+            return this.imageById(this.verleih.id) as string;
         },
         detailUrl () {
-            return '/club/' + this.club.id
+            return '/verleih/' + this.verleih.id
         }
     }
 })

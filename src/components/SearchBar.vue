@@ -1,7 +1,6 @@
 <template>
   <div class="row justify-content-center align-items-center g-2">
     <div class="col">
-      <div class="mb-3">
         <BInputGroup>
           <template #append>
             <BButton>Suche</BButton>
@@ -13,7 +12,6 @@
             @input="input => { emit('searchQuery', input) }"
           />
         </BInputGroup>
-      </div>
     </div>
   </div>
 </template>

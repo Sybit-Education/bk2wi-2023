@@ -7,20 +7,26 @@
       </div>
       -->
 
-      <h2>Clubs</h2>
-      <ClubList />
+      <h2>Verleih</h2>
+      <VerleihList/>
 
+      
       
       <h2>Events</h2>
       <EventList />
+
+
+
+      <h2>Bars</h2>
+      <BarList />
 
     </div>
 </template>
 
 <script setup lang="ts">
-import ContentItem from './ContentItem.vue';
 import EventList from './events/EventList.vue'
-import ClubList from './club/ClubList.vue'
+import VerleihList from './verleih/VerleihList.vue'
+import BarList from './bar/BarList.vue'
 
 
 const props = defineProps(['foundEntry', 'entries'])

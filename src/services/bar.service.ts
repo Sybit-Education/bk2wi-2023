@@ -21,15 +21,15 @@ const barService = {
                   return resultList.push({
                   id: partialRecord.id,
                   name: partialRecord.get('Name') as string,
-                  // bild: partialRecord.get('Bild') as string,
-                  // notes: partialRecord.get('Notes') as string,
+                  bild: partialRecord.get('Bild') as any,
+                  getraenkekarte: partialRecord.get('Geträenkekarte') as string,
                   adresse: partialRecord.get('Adresse') as string,
                   ort: partialRecord.get('Ort') as string,
                   plz: partialRecord.get('PLZ') as string,
                   email: partialRecord.get('E-Mail') as string,
                   telefon: partialRecord.get('Telefon') as string,
                   oeffnungstage: partialRecord.get('Öffnungstage') as string,
-                  oeffnungszeite: partialRecord.get('Öffnungszeiten') as string,
+                  oeffnungszeiten: partialRecord.get('Öffnungszeiten') as string,
                   webseite: partialRecord.get('Webseite') as string,
                 })
               })

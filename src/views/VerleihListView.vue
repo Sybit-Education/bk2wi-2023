@@ -1,6 +1,5 @@
 <script setup lang="ts">
-// import Clublistcontent from '@/components/Clublistcontent.vue'
-import ClubItem from '@/models/ClubItem'
+// import Verleihlistcontent from '@/components/Verleihlistcontent.vue'
 import FilterSidebar from '@/components/FilterSidebar.vue'
 import SearchBar from '@/components/SearchBar.vue'
 import type { BRow } from 'bootstrap-vue-next'

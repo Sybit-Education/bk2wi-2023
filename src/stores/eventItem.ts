@@ -16,6 +16,14 @@ export const useEventItemStore = defineStore('event', {
     getAll: (state) => state.eventItemList,
     getById: (state) => (id: string) =>
       state.eventItemList.find((event: EventItem) => event.id === id),
+      imageById: (state) => (id: string) => {
+        const item = state.eventItemList.find((verleih: EventItem) => verleih.id === id)
+        if (item && item.bild) {
+            return item.bild[0].thumbnails.large.url
+        } else {
+            return ''
+        }
+    }
   },
   actions: {
     async load() {
