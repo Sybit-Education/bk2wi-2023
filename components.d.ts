@@ -36,6 +36,8 @@ declare module 'vue' {
     BRow: typeof import('bootstrap-vue-next')['BRow']
     BSkeleton: typeof import('bootstrap-vue-next')['BSkeleton']
     BSkeletonWrapper: typeof import('bootstrap-vue-next')['BSkeletonWrapper']
+    ClubItem: typeof import('./src/components/club/ClubItem.vue')['default']
+    ClubList: typeof import('./src/components/club/ClubList.vue')['default']
     ContentItem: typeof import('./src/components/ContentItem.vue')['default']
     EventItem: typeof import('./src/components/events/EventItem.vue')['default']
     EventList: typeof import('./src/components/events/EventList.vue')['default']
