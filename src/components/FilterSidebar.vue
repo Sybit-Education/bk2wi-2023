@@ -1,6 +1,19 @@
 <template>
-  <BButton @click="click">Show OffCanvas</BButton>
-  <BOffcanvas v-model="show" />
+  <BButton @click="click">Kategorie</BButton>
+  <BOffcanvas v-model="show" >
+
+    <BNav vertical class="w-25">
+      <BNavItem to="/">Home</BNavItem>
+      <BNavItem to="/verleih">Verleihe</BNavItem>
+      <BNavItem to="/events">Events</BNavItem>
+      <BNavItem to="/about">Über uns</BNavItem>
+    </BNav>
+
+
+
+
+  </BOffcanvas>
+
 </template>
 
 <script setup lang="ts">
