@@ -24,7 +24,7 @@ const router = createRouter({
     {
       path: '/verleih/:id',
       name: 'verleih-detail',
-      component: () => import('../views/ClubDetailView.vue')
+      component: () => import('../views/VerleihDetailView.vue')
     }
   ]
 })
