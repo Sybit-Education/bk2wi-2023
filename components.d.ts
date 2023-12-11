@@ -29,6 +29,7 @@ declare module 'vue' {
     BNavbarToggle: typeof import('bootstrap-vue-next')['BNavbarToggle']
     BNavItem: typeof import('bootstrap-vue-next')['BNavItem']
     BNavText: typeof import('bootstrap-vue-next')['BNavText']
+    BOffcanvas: typeof import('bootstrap-vue-next')['BOffcanvas']
     BPlaceholder: typeof import('bootstrap-vue-next')['BPlaceholder']
     BPlaceholderCard: typeof import('bootstrap-vue-next')['BPlaceholderCard']
     BPlaceholderWrapper: typeof import('bootstrap-vue-next')['BPlaceholderWrapper']
