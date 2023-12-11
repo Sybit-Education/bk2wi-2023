@@ -7,6 +7,8 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    BarItem: typeof import('./src/components/bar/BarItem.vue')['default']
+    BarList: typeof import('./src/components/bar/BarList.vue')['default']
     BarsItem: typeof import('./src/components/bars/barsItem.vue')['default']
     BarsList: typeof import('./src/components/bars/barsList.vue')['default']
     BBreadcrumb: typeof import('bootstrap-vue-next')['BBreadcrumb']

@@ -15,13 +15,18 @@
       <h2>Events</h2>
       <EventList />
 
+
+
+      <h2>Bars</h2>
+      <BarList />
+
     </div>
 </template>
 
 <script setup lang="ts">
-import ContentItem from './ContentItem.vue';
 import EventList from './events/EventList.vue'
 import VerleihList from './verleih/VerleihList.vue'
+import BarList from './bar/BarList.vue'
 
 
 const props = defineProps(['foundEntry', 'entries'])

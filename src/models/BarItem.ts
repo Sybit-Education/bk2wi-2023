@@ -2,8 +2,8 @@
 export default interface BarItem{
     id: string;
     name: string;
-    // bild : bild;
-    //getränkekarte: bild;
+    bild : any;
+    getraenkekarte: string;
     adresse: string;
     plz: string;
     ort: string;
