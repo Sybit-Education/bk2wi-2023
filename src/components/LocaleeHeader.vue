@@ -9,8 +9,10 @@
 
         <BCollapse id="nav-text-collapse" is-nav>
             <BNavbarNav>
-                <BNavItem to="/club">Clubs</BNavItem>
+                <BNavItem to="/verleih">Verleihe</BNavItem>
+                <BNavItem to="/events">Events</BNavItem>
                 <BNavItem to="/about">Über uns</BNavItem>
+               
             </BNavbarNav>
         </BCollapse>
     </BNavbar>

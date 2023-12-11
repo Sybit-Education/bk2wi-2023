@@ -35,10 +35,6 @@ declare module 'vue' {
     BRow: typeof import('bootstrap-vue-next')['BRow']
     BSkeleton: typeof import('bootstrap-vue-next')['BSkeleton']
     BSkeletonWrapper: typeof import('bootstrap-vue-next')['BSkeletonWrapper']
-    Club1: typeof import('./src/components/club/Club1.vue')['default']
-    ClubItem: typeof import('./src/components/verleih/ClubItem.vue')['default']
-    ClubList: typeof import('./src/components/verleih/ClubList.vue')['default']
-    Clublistcontent: typeof import('./src/components/events/Clublistcontent.vue')['default']
     ContentItem: typeof import('./src/components/ContentItem.vue')['default']
     EventItem: typeof import('./src/components/events/EventItem.vue')['default']
     EventList: typeof import('./src/components/events/EventList.vue')['default']
@@ -57,9 +53,11 @@ declare module 'vue' {
     SearchBar: typeof import('./src/components/SearchBar.vue')['default']
     Template: typeof import('./src/components/template.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
+    Verleih1: typeof import('./src/components/verleih/Verleih1.vue')['default']
     VerleihItem: typeof import('./src/components/verleih/VerleihItem.vue')['default']
     Verleihlist: typeof import('./src/components/verleih/Verleihlist.vue')['default']
     VerleihList: typeof import('./src/components/verleih/VerleihList.vue')['default']
+    Verleihlistcontent: typeof import('./src/components/events/Verleihlistcontent.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
   export interface ComponentCustomProperties {
