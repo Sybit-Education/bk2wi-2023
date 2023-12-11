@@ -1,14 +1,15 @@
 import airtableBase from './airtable.service'
-import type ClubItem from '@/models/ClubItem'
+import type VerleihItem from '@/models/VerleihItem'
 
-const TABLE_NAME = 'Club'
+const TABLE_NAME = 'Verleih'
 const ACTIVE_VIEW = 'public'
 
-const clubService = {
+const verleihService = {
 
     getList () {
       return new Promise((resolve, reject) => {
-          const resultList: ClubItem[] = []
+          const resultList: VerleihItem[] = []
+
           airtableBase(TABLE_NAME)
           .select({
               view: ACTIVE_VIEW
@@ -28,7 +29,7 @@ const clubService = {
                     email: partialRecord.get('E-Mail') as string,
                     telefon: partialRecord.get('Telefon') as string,
                     oeffnungstage: partialRecord.get('Öffnungstage') as string,
-                    oeffnungszeite: partialRecord.get('Öffnungszieten') as string,
+                    oeffnungszeiten: partialRecord.get('Öffnungszieten') as string,
                     webseite: partialRecord.get('Webseite') as string,                                                   
                   })
               })
@@ -47,13 +48,13 @@ const clubService = {
           )
       })
     },
-    getById (clubId: string) {
-      airtableBase(TABLE_NAME).find(clubId, function(err, record) {
+    getById (verleihId: string) {
+      airtableBase(TABLE_NAME).find(verleihId, function(err, record) {
         if (err) { console.error(err); return; }
-        console.log('club', record?.fields)
+        console.log('verleih', record?.fields)
         return record?.fields;
       });
     }
   }
   
-  export default clubService
+  export default verleihService

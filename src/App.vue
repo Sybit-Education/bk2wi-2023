@@ -1,6 +1,6 @@
 <script lang="ts">
 import { useEventItemStore } from './stores/eventItem';
-import { useClubItemStore } from './stores/clubItem';
+import { useVerleihItemStore } from './stores/verleihItem';
 
 import { defineComponent } from 'vue';
 
@@ -8,9 +8,9 @@ export default defineComponent({
 
   created () {
     const storeEvents = useEventItemStore()
-    const storeClub = useClubItemStore()
+    const storeVerleih = useVerleihItemStore()
     storeEvents.load()
-    storeClub.load()
+    storeVerleih.load()
   }
 })
 </script>
@@ -27,3 +27,4 @@ export default defineComponent({
   </main>
 </template>
 
+./stores/VerleihItem
