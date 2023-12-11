@@ -1,4 +1,4 @@
-export default interface ClubItem {
+export default interface VerleihItem {
     id: string;
     name: string;
     notes: string;
@@ -9,6 +9,6 @@ export default interface ClubItem {
     email: string;
     telefon: string;
     oeffnungstage: string;
-    oeffnungszeite: string;
+    oeffnungszeiten: string;
     webseite: string;
 }

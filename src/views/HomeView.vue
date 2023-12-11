@@ -19,6 +19,7 @@ const entries = ref([ "test", '1234', '567'])
       <BRow>
         <SearchBar :searchQuery="searchQuery" @searchQuery="searchQuery = $event" />
         <HomeContent :entries="entries" :foundEntry="searchQuery" />
+   
       </BRow>
     </BCol>
   </BRow>

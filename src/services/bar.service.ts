@@ -29,7 +29,7 @@ const barService = {
                   email: partialRecord.get('E-Mail') as string,
                   telefon: partialRecord.get('Telefon') as string,
                   oeffnungstage: partialRecord.get('Öffnungstage') as string,
-                  oeffnungszeite: partialRecord.get('Öffnungszeiten') as string,
+                  oeffnungszeiten: partialRecord.get('Öffnungszeiten') as string,
                   webseite: partialRecord.get('Webseite') as string,
                 })
               })
