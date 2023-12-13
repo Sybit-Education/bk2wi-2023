@@ -1,7 +1,7 @@
 <template>
   <div  v-if="verleih">
     <BBreadcrumb>
-      <BBreadcrumbItem to="/home"> Home </BBreadcrumbItem>
+      <BBreadcrumbItem to="/"> Home </BBreadcrumbItem>
       <BBreadcrumbItem to="/verleih"> Verleihe </BBreadcrumbItem>
       <BBreadcrumbItem :to="'/verleih/' + verleih.id" active> {{ verleih.name }} </BBreadcrumbItem>
     </BBreadcrumb>
