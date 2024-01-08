@@ -20,7 +20,7 @@ const eventService = {
                 resultList.push({
                 id: partialRecord.id,
                 name: partialRecord.get('Name') as string,
-                bild: partialRecord.get('Bild') as string,
+                bild: partialRecord.get('Bild') as any,
                 beschreinung: partialRecord.get('Beschreibung') as string,
                 adresse: partialRecord.get('Adresse') as string,
                 ort: partialRecord.get('Ort') as string,

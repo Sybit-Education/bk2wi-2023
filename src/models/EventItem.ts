@@ -1,7 +1,7 @@
 export default interface EventItem {
     id: string;
     name: string;
-    bild: string;
+    bild: any;
     beschreinung: string;
     adresse: string;
     ort: string;
