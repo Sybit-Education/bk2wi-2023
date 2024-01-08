@@ -26,7 +26,7 @@
         <h5>Öffnungszeiten</h5>
         <openingHours>
             <p>Öffnungstage<span>{{ bar.oeffnungstage }}</span></p>
-            <p>Öffnungszeiten<span>{{ bar.oeffnungszeiten }}</span></p>
+            <p>Öffnungszeit<span>{{ bar.oeffnungszeiten }}</span></p>
         </openingHours>
         
         <h6>Webseite</h6>
