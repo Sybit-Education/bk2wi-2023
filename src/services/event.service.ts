@@ -19,7 +19,15 @@ const eventService = {
             partialRecords.forEach((partialRecord) => {
                 resultList.push({
                 id: partialRecord.id,
-                name: partialRecord.get('Name') as string
+                name: partialRecord.get('Name') as string,
+                bild: partialRecord.get('Bild') as string,
+                beschreinung: partialRecord.get('Beschreibung') as string,
+                adresse: partialRecord.get('Adresse') as string,
+                ort: partialRecord.get('Ort') as string,
+                plz: partialRecord.get('PLZ') as string,
+                datum: partialRecord.get('Datum') as string,
+                uhrzeit: partialRecord.get('Uhrzeit') as string,
+                eintrittspreis: partialRecord.get('Eintrittspreis') as string
                 })
             })
             // To fetch the next page of records, call `fetchNextPage`.
