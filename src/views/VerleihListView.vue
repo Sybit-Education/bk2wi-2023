@@ -15,9 +15,9 @@ const entries = ref([ "test", '1234', '567'])
 
 <BContainer>
   <BRow>
-    <BCol>
+    <!-- <BCol>
       <FilterSidebar />
-    </BCol >
+    </BCol > -->
       <!-- <BCol>
         <SearchBar :searchQuery="searchQuery" @searchQuery="searchQuery = $event" />
     </BCol> -->
