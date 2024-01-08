@@ -22,7 +22,7 @@ import { mapState } from 'pinia';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: "ProjectListView",
+  name: "VerleihListView",
   computed: {
     ...mapState(useVerleihItemStore, {
       verleihList: (store) => store.verleihItemList as Array<VerleihItem>,

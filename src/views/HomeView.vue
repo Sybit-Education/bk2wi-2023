@@ -10,19 +10,14 @@ const entries = ref([ "test", '1234', '567'])
 
 </script>
 
-<template>   
-  <BRow>
-    <BCol lg="3">
-      <FilterSidebar />
-    </BCol>
-    <BCol>
-      <BRow>
-        <SearchBar :searchQuery="searchQuery" @searchQuery="searchQuery = $event" />
-        <HomeContent :entries="entries" :foundEntry="searchQuery" />
-   
-      </BRow>
-    </BCol>
-  </BRow>
+<template>
+  <BContainer>
+      <!-- <BCol lg="3">
+        <FilterSidebar />
+      </BCol> -->
+          <SearchBar :searchQuery="searchQuery" @searchQuery="searchQuery = $event" />
+          <HomeContent :entries="entries" :foundEntry="searchQuery" />
+  </BContainer>   
 </template>
 
 <style scoped>
