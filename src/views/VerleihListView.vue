@@ -7,9 +7,9 @@ import VerleihList from '../components/verleih/VerleihList.vue'
 
 <BContainer>
   <BRow>
-    <BCol>
+    <!-- <BCol>
       <FilterSidebar />
-    </BCol >
+    </BCol > -->
       <!-- <BCol>
         <SearchBar :searchQuery="searchQuery" @searchQuery="searchQuery = $event" />
     </BCol> -->
