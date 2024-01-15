@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import EventList from './events/EventList.vue'
+import EventList from './event/EventList.vue'
 import VerleihList from './verleih/VerleihList.vue'
 import BarList from './bar/BarList.vue'
 

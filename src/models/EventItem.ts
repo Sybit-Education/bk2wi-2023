@@ -2,7 +2,7 @@ export default interface EventItem {
     id: string;
     name: string;
     bild: any;
-    beschreinung: string;
+    beschreibung: string;
     adresse: string;
     ort: string;
     plz: string;

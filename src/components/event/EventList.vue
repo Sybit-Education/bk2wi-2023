@@ -15,9 +15,9 @@
     </b-card-group>
 </template>
 <script lang="ts">
-import type EventItem from '@/models/EventItem';
-import { useEventItemStore } from '@/stores/eventItem';
-import { useLoadingStore } from '@/stores/loading';
+import type EventItem from '../../models/EventItem';
+import { useEventItemStore } from '../../stores/eventItem';
+import { useLoadingStore } from '../../stores/loading';
 import { mapState } from 'pinia';
 import { defineComponent } from 'vue';
 
