@@ -2,7 +2,6 @@
     <router-link :to="detailUrl">
         <b-card :img-src="image" img-top>
             <b-card-title>{{ verleih.name }}</b-card-title>
-            <b-card-text>Lore ipsum </b-card-text>
         </b-card>
     </router-link>
 </template>
