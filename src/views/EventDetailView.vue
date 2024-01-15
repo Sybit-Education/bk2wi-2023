@@ -9,7 +9,7 @@
       <div>
         <h1>{{ events.name }}</h1>
         <b-img :src="image" fluid-grow />
-        <p>{{ events.notes }}</p>
+       
   
         <h3>Adresse</h3>
         <address>
