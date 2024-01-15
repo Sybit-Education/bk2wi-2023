@@ -17,6 +17,23 @@
         <span id="zipCode">{{ verleih.plz }}</span> <span id="city">{{ verleih.ort }}</span>
       </address>
 
+      <h4>Kontaktdaten</h4>
+      <contactDetails>
+        <p>Telefon: <span> {{ verleih.telefon }} </span></p>
+        <p>Email:<span>{{ verleih.email }}</span> </p>
+      </contactDetails>
+
+      <h5>Öffnungszeiten</h5>
+        <openingHours>
+            <p>Öffnungstage<span>{{ verleih.oeffnungstage }}</span></p>
+            <p>Öffnungszeit<span>{{ verleih.oeffnungszeiten }}</span></p>
+        </openingHours>
+
+        <h6>Webseite</h6>
+        <website>
+          <span>{{ verleih.webseite}}</span>
+        </website>
+
     </div>
   </div>
 </template>
