@@ -16,18 +16,19 @@ export const useSeachStore = defineStore('search', {
     getAll: (state) => state.searchList
   },
   actions: {
-    reset() {
+    clear() {
         this.searchList = []
     },
     addEventList(list: EventItem[]) {
       let searchItem: SearchItem
+      
       list.forEach(eventItem => {
+        
         searchItem.id = eventItem.id
         searchItem.type = 'event'
         searchItem.title = eventItem.name
-        searchItem.searchContent = eventItem.name.toLocaleLowerCase() 
-            + ' ' + eventItem.beschreibung.toLocaleLowerCase() 
-            + ' ' + eventItem.ort.toLocaleLowerCase()
+        searchItem.searchContent = Object.values(eventItem).join(", ").toLocaleLowerCase()
+
         this.searchList.push(searchItem)
       });
     }
