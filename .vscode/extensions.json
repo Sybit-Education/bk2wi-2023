@@ -4,6 +4,7 @@
     "vue.vscode-typescript-vue-plugin",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "eamodio.gitlens"
+    "eamodio.gitlens",
+    "christian-kohler.npm-intellisense"
   ]
 }
