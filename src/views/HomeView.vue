@@ -15,8 +15,10 @@ const entries = ref([ "test", '1234', '567'])
       <!-- <BCol lg="3">
         <FilterSidebar />
       </BCol> -->
+      <div>
           <SearchBar :searchQuery="searchQuery" @searchQuery="searchQuery = $event" />
           <HomeContent :entries="entries" :foundEntry="searchQuery" />
+      </div>
   </BContainer>   
 </template>
 
