@@ -6,7 +6,7 @@ interface State {
   searchList: SearchItem[]
 }
 
-export const useSeachStore = defineStore('search', {
+export const useSearchStore = defineStore('search', {
   state: (): State => {
     return {
       searchList: []
