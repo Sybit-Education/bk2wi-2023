@@ -5,26 +5,49 @@
           <template #append>
             <BButton>Suche</BButton>
           </template>
-          <BFormInput
+          <input
             id="inline-form-input-name"
+            list="searchList"
             placeholder="Suchen"
-            v-model = "input"
-            @input="input => { emit('searchQuery', input) }"
+            @change="search(evt)"
           />
+          <datalist id="searchList">
+            <option v-for="item in searchList" v-bind:key="item.id" :value="item.id">
+              {{ item.title }}
+            </option>
+          </datalist>
         </BInputGroup>
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
+<script  lang="ts">
+import type SearchItem from '@/models/SearchItem'
+import { defineComponent } from 'vue'
 
-import { ref } from "vue";
 
+export default defineComponent({
+  name: 'SearchBar',
+  props: {
+    searchList: {
+      type: Array<SearchItem>,
+      required: true
+    }
+  },
+  data () {
+    return {
+      searchQuery: '' as string
+    }
+  },
+  emits: ['search'],
+  methods: {
+    search (input: string) {
+      this.searchQuery = input
+      this.$emit('search', this.searchQuery)
+    }
+  }
 
-let input = ref("");
-    
-const emit = defineEmits(['searchQuery'])
-const props = defineProps(['searchQuery'])
+})
 </script>
 
 <style scoped>

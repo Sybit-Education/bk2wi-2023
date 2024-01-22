@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import HomeContent from '@/components/HomeContent.vue'
-import FilterSidebar from '@/components/FilterSidebar.vue'
 import SearchBar from '@/components/SearchBar.vue'
-import type { BRow } from 'bootstrap-vue-next'
+import { useSearchStore } from '@/stores/search';
 import { ref } from 'vue'
 
+const searchList = useSearchStore().getAll
 const searchQuery = ref('')
 const entries = ref([ "test", '1234', '567'])
 
@@ -16,7 +16,7 @@ const entries = ref([ "test", '1234', '567'])
         <FilterSidebar />
       </BCol> -->
       <div>
-          <SearchBar :searchQuery="searchQuery" @searchQuery="searchQuery = $event" />
+          <SearchBar :search-list="searchList" @searchQuery="searchQuery = $event" />
           <HomeContent :entries="entries" :foundEntry="searchQuery" />
       </div>
   </BContainer>   

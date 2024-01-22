@@ -7,6 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Autocomplete: typeof import('./src/components/Autocomplete.vue')['default']
     BarItem: typeof import('./src/components/bar/BarItem.vue')['default']
     BarList: typeof import('./src/components/bar/BarList.vue')['default']
     BBreadcrumb: typeof import('bootstrap-vue-next')['BBreadcrumb']
