@@ -37,4 +37,5 @@ export const useBarItemStore = defineStore('bar', {
       
     },
   },
+  
 })
