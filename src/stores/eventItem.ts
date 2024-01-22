@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import type EventItem from '@/models/EventItem'
 import eventService from '@/services/event.service'
 import { useLoadingStore } from './loading'
+import { useSeachStore } from './search'
 
 interface State {
   eventItemList: EventItem[]
@@ -31,6 +32,7 @@ export const useEventItemStore = defineStore('event', {
       loadingStore.updateLoading(true);
       eventService.getList().then((result) => {
         this.eventItemList = result as Array<EventItem>;
+        useSeachStore().addEventList(this.eventItemList)
         loadingStore.updateLoading(false);
       })
       
