@@ -16,6 +16,21 @@
           <span id="street">{{ events.adresse }}</span><br />
           <span id="zipCode">{{ events.plz }}</span> <span id="city">{{ events.ort }}</span>
         </address>
+
+        <h4>Datum</h4>
+      <date>
+      <span> {{ events.datum }} </span>
+      </date>
+
+      <h5>Uhrzeit</h5>
+        <openingHours>
+          <span>{{ events.uhrzeit }}</span>
+        </openingHours>
+
+        <h6>Eintrittspreis</h6>
+        <price>
+          <span>{{ events.eintrittspreis}}</span>
+        </price>
   
       </div>
     </div>
