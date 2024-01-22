@@ -35,16 +35,7 @@ const router = createRouter({
       name: 'bar-detail',
       component: () => import('../views/BarDetailView.vue')
     },
-    {
-      path: '/event',
-      name: 'event',
-      component: () => import('../views/EventListView.vue')
-    },
-    {
-      path: '/event/:id',
-      name: 'event-detail',
-      component: () => import('../views/EventDetailView.vue')
-    }
+ 
   ]
 })
 
